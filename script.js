@@ -1,19 +1,3 @@
-// const searchForm = document.getElementById("searchForm");
-// const cityInput = document.getElementById("cityInput");
-
-// searchForm.addEventListener("submit", (event) => {
-//   event.preventDefault();
-
-//   const city = cityInput.value.trim();
-
-//   if (city === "") {
-//     // alert("Please enter a city name.");
-//     return;
-//   }
-
-//   console.log("Searching for:", city);
-// });
-
 
 const searchForm = document.getElementById("searchForm");
 const cityInput = document.getElementById("cityInput");
