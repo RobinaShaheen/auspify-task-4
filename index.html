@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>WeatherFlow - Weather Dashboard</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <main class="app-container">
+
+    <section class="weather-card">
+
+      <header class="weather-header">
+        <p class="subtitle">WEATHER DASHBOARD</p>
+
+        <h1>WeatherFlow</h1>
+
+        <p class="description">
+          Search for a city to view current weather information.
+        </p>
+      </header>
+
+      <form class="search-form" id="searchForm">
+
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter city name..."
+          autocomplete="off"
+        />
+
+        <button type="submit">
+          Search
+        </button>
+
+      </form>
+
+      <p id="errorMessage" class="error-message"></p>
+
+      <section id="weatherResult" class="weather-result">
+
+        <div class="weather-icon" id="weatherIcon">
+          ☀️
+        </div>
+
+        <h2 id="cityName">Search for a city</h2>
+
+        <p id="weatherDescription">
+          Weather information will appear here.
+        </p>
+
+        <div class="temperature">
+          <span id="temperature">--</span>°C
+        </div>
+
+        <div class="weather-details">
+
+          <div class="detail-card">
+            <span class="detail-label">Feels Like</span>
+            <strong id="feelsLike">--°C</strong>
+          </div>
+
+          <div class="detail-card">
+            <span class="detail-label">Humidity</span>
+            <strong id="humidity">--%</strong>
+          </div>
+
+          <div class="detail-card">
+            <span class="detail-label">Wind Speed</span>
+            <strong id="windSpeed">-- km/h</strong>
+          </div>
+
+        </div>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
